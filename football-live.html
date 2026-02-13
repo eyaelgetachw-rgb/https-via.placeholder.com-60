@@ -1,36 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Football Live</title>
-    <style>
-        body { font-family: Arial, sans-serif; background: #efefef; margin: 0; padding: 0; }
-        .container { max-width: 600px; background: #fff; margin: 40px auto; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-        h1 { color: #207b3c; }
-        .match { border-bottom: 1px solid #eee; padding: 16px 0; }
-        .team { font-weight: bold; }
-        .score { font-size: 1.5em; color: #333; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yacine Sport Live</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#0f0f0f;
+  color:white;
+}
+
+header{
+  background:#00c853;
+  padding:15px;
+  text-align:center;
+  font-size:22px;
+  font-weight:bold;
+}
+
+nav{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  background:#1c1c1c;
+  padding:10px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:8px 15px;
+  font-size:15px;
+}
+
+.container{
+  padding:15px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+  gap:15px;
+}
+
+.card{
+  background:#1e1e1e;
+  padding:15px;
+  border-radius:10px;
+  box-shadow:0 0 10px rgba(0,0,0,0.5);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:scale(1.05);
+}
+
+.card h3{
+  margin-bottom:10px;
+}
+
+button{
+  background:#00c853;
+  border:none;
+  padding:8px 15px;
+  color:white;
+  border-radius:5px;
+  cursor:pointer;
+  margin-top:10px;
+}
+
+button:hover{
+  background:#009624;
+}
+
+footer{
+  text-align:center;
+  padding:15px;
+  background:#1c1c1c;
+  margin-top:20px;
+  font-size:14px;
+}
+
+/* Mobile */
+@media(max-width:600px){
+  header{
+    font-size:18px;
+  }
+  nav a{
+    font-size:14px;
+  }
+}
+</style>
+
 </head>
 <body>
-    <div class="container">
-        <h1>Football Live Scoreboard</h1>
-        <div class="match">
-            <div class="team">Team A</div>
-            <div class="score">2</div>
-            <span>vs</span>
-            <div class="team">Team B</div>
-            <div class="score">1</div>
-        </div>
-        <div class="match">
-            <div class="team">Team C</div>
-            <div class="score">0</div>
-            <span>vs</span>
-            <div class="team">Team D</div>
-            <div class="score">0</div>
-        </div>
-        <!-- Add more matches as needed -->
-    </div>
+
+<header>Yacine Sport Live</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Live TV</a>
+  <a href="#">Matches</a>
+  <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+
+  <div class="card">
+    <h3>Live Football</h3>
+    <p>Watch live football matches here.</p>
+    <button>Watch Now</button>
+  </div>
+
+  <div class="card">
+    <h3>beIN Sports</h3>
+    <p>All beIN sports channels live streaming.</p>
+    <button>Watch Now</button>
+  </div>
+
+  <div class="card">
+    <h3>SuperSport</h3>
+    <p>Watch SuperSport channels online.</p>
+    <button>Watch Now</button>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Yacine Sport TV
+</footer>
+
 </body>
 </html>
